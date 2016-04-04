@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Latihan pemograman4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+</head>
+<body>
+<!--============================== header =================================-->
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">		
+			<div class="page-header">
+				<h1>
+					UJIAN TENGAH SEMESTER <small><br>" Praktikum pada mata kuliah pemograman 4"</small>
+				</h1>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-inverse" role="navigation">
+						<div class="navbar-header">
+							 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></a>
+						</div>
+						
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a href="https://github.com/pandawalima"> <span class="glyphicon glyphicon-signal"></span> GitHub</a>
+								</li>		
+								<li class="active">
+									<a href="index_uas.html"> <span class="glyphicon glyphicon-th-large"></span> Tugas UAS</a>
+								</li>
+								<li>
+									<a href="http://software.endy.muhardin.com/java/apache-maven/"><span class="glyphicon glyphicon-globe"></span> REFERENSI</a>						
+								</li>									
+							</ul>
+							
+							<form class="navbar-form navbar-right" role="search">
+							  <div class="form-group">
+								<input type="text" class="form-control" placeholder="Cari">
+							  </div>
+							  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+							</form>
+							
+						</div>
+						
+					</nav>
+				</div>
+			
+			</div>
+			<!--============================== content =================================-->
+		
+				<article class="posts">
+				<h2 class="title-post">Membuat artikel</h2>
+				<div class="meta-post">
+					<span><em class="glyphicon glyphicon-user"></em> Aman</span>
+					<span><em class="glyphicon glyphicon-time"></em> 17 April 2016</span>
+				</div>
+				<div class="content">
+				<p> ada beberapa langkah sebelum membuat aplikasi dijava meliputi :</p>
+				<ul>				
+						<li><p>Install Java SDK </p></li>
+						<li><p>Setting Environment Variable</p></li>
+						<li><p>Instal Git </p></li>
+						<li><p>Install TortoisGit </p></li>
+				</ul>
+				<p> sesuai dengan ketentuan materi kuliah pemograman 4 ada beberapa tahap sebelumnya membuat registrasi domain akun diopenshift terus deploy di cloud , pembelian domain sampai bisa diakses dengan nama domain sendiri , membuat ssh-key, clone file atau mendeploy kembali dengan mengcommit dari aplikasi TortoisGit yang sudah terinstall di laptop,mari kita membahas artikel saya ini dengan langkah-langkah sebagai berikut :</p>
+				
+		<h3>Membuat webserver di openshift</h3>
+		 <p>1.Buat akun di openshift dan isikan username serta password kita</p>
+		<img src="images/Akun1.jpg" width="350x350" title="buat akun"></br>
+		<img src="images/Akun2.jpg" width="350x350" title="buat akun">
+		</br></br>
+		
+		<p>2.Verifikasi email yang dikirim dari openshift</p>
+		<img src="images/Akun3.jpg" width="400x400" title="verifikasi email"></br>
+		<img src="images/Akun4.jpg" width="400x400" title="verifikasi email">
+		</br></br>
+		
+		<p>3.Create Application</p>
+		<img src="images/membuat.jpg" width="400x400" title="create aplikasi">
+		</br></br>
+		
+		<p>4.Pilih aplikasi yang akan dibuat, contohnya Jekyll</p>
+		<img src="images/Latihanhosting1.jpg" width="400x400" title="pilih aplikasi">
+		</br></br>
+		
+		<p>5.Isi public URL dengan yang kita inginkan</p>
+		<img src="images/Latihanhosting2.jpg" width="400x400" title="mengisi public url">
+		<p>kemudian klik create application</p>
+		<img src="images/Latihanhosting3.jpg" width="400x400" title="create">
+		</br></br>
+		
+		<p>6.Aplikasi sudah jadi</p>
+		<img src="images/Latihanhosting5.jpg" width="400x400" title="aplikasi">
+		 <p>kita bisa cek dengan mengakses public url yang kita isi tadi berikut tampilannya </p></br>
+		 <img src="images/latihanhosting5a.jpg" width="400x400" title="akses url">
+		</br></br>
+		
+		<p>7.Generate public key dengan menjalankan Putty</p>
+		<img src="images/Latihanhosting6.jpg" width="400x400" title="buat key"><br>
+		<img src="images/Latihanhosting7.jpg" width="400x400" title="buat key">
+		 </br></br>
+		   
+		 
+		<p>8.isi key passphrase dengan yang mudah diingat, misal "pemograman4"</p>
+		<img src="images/Latihanhosting8.jpg" width="400x400" title="isi passphrase">
+		 </br></br>
+		
+		<p>9.klik save private key dan public key simpan di folder yang mudah diakses kembali</p>
+		<img src="images/Latihanhosting9.jpg" width="400x400" title="simpan private key"></br>
+		<p>berikut hasil yang disimpan di folder </p> <img src="images/Latihanhosting11.jpg" width="400x400" title="folder putty">	</br></br>
+		
+		
+		<p>10.sebelum membuat set ssh </p><img src="images/Latihanhosting12.jpg" width="400x400" title="ssh key">
+		<br>
+		<p>kita Copy text yang ada di textbox public key ke ssh public key di akun openshift kita</p>
+		<img src="images/Latihanhosting13.jpg" width="400x400" title="copy public key">
+		 </br></br>
+		
+		<p>11.beri nama pada key nya misalnya ssh-key dan paste text yang tadi dicopy pada textbox di bawahnya</p>
+		<img src="images/Latihanhosting14.jpg" width="400x400" title="create ssh key">
+		 </br></br>
+		
+		 <p>12.klik create untuk membuat ssh key dan sukses berikut tampilannya</p>
+		<img src="images/Latihanhosting15.jpg" width="400x400" title="add ssh key">
+		 </br></br>
+		 
+		 <p>13 Clone source dari openshift kita perlu mengetahui akses URL ssh dan mencopy alamat ULR tersebut, berikut tampilannya</p>
+		<img src="images/Latihanhosting16.jpg" width="400x400" title="copyssh">
+		 </br></br>
+		 
+		   		 
+		  <p>14.Pada tampilan git clone masukkan URL dari source kode ssh openshift tadi selanjutnya ceklis Load putty key cari file private key yang tadi kita simpan</p>
+		<img src="images/Latihanhosting17.jpg" width="400x400" title="clone source kode">
+		 </br></br>
+		 
+		 <p>15.masukkan passphrase yang tadi kita isi yaitu "Pemograman4"</p>
+		<img src="images/Latihanhosting18.jpg" width="400x4000" title="meminta passwd key">
+		<img src="images/Latihanhosting19.jpg" width="400x400" title="memasukan key">
+		 </br></br>
+		 
+		  <p>16.selanjutnya di klik OK , maka akan melakukan proses cloning latihanhosting yang saya buat dari platform openshift </p> <img src="images/Latihanhosting20.jpg" width="400x400" title="clone source kode">
+		 </br></br></br>
+		 <p>berikut tampilannya hasil proses cloning dengan status succes </p> <img src="images/Latihanhosting21.jpg" width="400x400" title="clone source kode">
+		 </br></br>
+		 
+		 <h3> Membuat artikel</h3>
+		<p>1.Setelah folder latihanhosting muncul untuk web berbasis html lalu kita edit menggunakan notepad++ serta mengcopy folder images yang isinya hasil printscren langkah-langkah pembuatan web di openshift</p>
+		<img src="images/Latihanhosting23.jpg" width="400x400" title="buat artikel"><br>
+		 </br></br></br>	
+			
+		<p>2.Setelah itu kita deploy kembali file tersebut ke openshift</p>
+		<img src="images/Latihanhosting24.jpg" width="400x400" title="deploy">
+		 </br></br>
+		
+		<p>3.Selanjutnya kita klik commit</p>
+		<img src="images/Latihanhosting25.jpg" width="400x400" title="deploy">
+		 </br></br>
+		 
+		 <p>4. hasilnya Sukses, berikut tampilannya</p>
+		<img src="images/Latihanhosting26.jpg" width="400x400" title="commit">
+		 </br></br>
+		
+		<p>5.Setelah sukses di commit lalu kita push ke openshift</p>
+		<img src="images/Latihanhosting27.jpg" width="400x400" title="push">
+		 </br></br>
+		
+		<p>6.Push ke master</p>
+		<img src="images/Latihanhosting28.jpg" width="400x400" title="push">
+		 </br></br>
+		
+		<p>7.Push sukses, lakukan cara seperti di atas pada file-file lainnya yang akan di upload ke openshift</p>
+		<img src="images/Latihanhosting29.jpg" width="400x400" title="push">
+		 </br></br>
+		
+		<p>8.Setelah push sukses, kita coba akses kembali aplikasi yang kita buat tadi</p>
+		<p>masuk ke akun openshift kita atau klik di aplikasi </p><a href=http://latihanhosting-amancirebon.rhcloud.com role="button">latihanhosting</a></p></li> 
+		</p>
+		<img src="images/Latihanhosting30.jpg" width="400x400" title="push">
+		</br></br>
+		
+		
+		<p>Membuat Artikel berhasil di buat</p>
+		
+				<h3> TAHAP BELI DOMAIN </h3>
+				<p>saya akan order pembelian domain di <a href="https://idwebhost.com"  role="button">Idwebhost</a></p></li>  dan cek ketersediaan domain yang kita inginkan</p>
+				<p>Order atau beli domain yang kita inginkan dan ikuti langkah-langkahnya </p>
+				<p>1. Registrasi dan mendaaftarkan dan ada beberapa biodata kita untuk memvalidasi supaya bisa login , berikut tampilannya</p>
+				<img src="images/RegistrasiDomain.jpg" width="400x400" title="registrasi"> </br></br>
+				<p>2. ketik nama domain kita misalkan amanpandawa untuk periksa kesediaan domain apakah bisa di order, berikut tampilannya</p>
+				<img src="images/Pilihdomain.jpg" width="400x400" title="pilihdomain"> </br></br>
+				<p>3. Mengetahui Ringkasan Pemesanan yang akan kita order dan melakukan pembayaran  atau Tranfer Lewat ATM, berikut tampilannya</p>
+				<img src="images/RingkasanPemesanan.jpg" width="400x400" title="Ringkasan Pemesanan"> </br></br>
+				<p>4. Menyelesaikan pemesanan dengan menceklis dan menyetujui order yang kita pesan, berikut tampilannya</p>
+				<img src="images/SelesaikanPemesanan.jpg" width="400x400" title="Selesaikan Pemesanan"> </br></br>
+				<p>5. Menerima faktur online untuk melakukan transfer pembayaran lewat ATM atau Internet Banking, berikut tampilan faktur yang telah di proses</p>
+				<img src="images/FakturPembayaran.jpg" width="400x400" title="Faktur"> </br></br> 
+				<p>6. setelah melakukan pembayaran lalu kita melakukan konfirmasi dengan mengirim bukti transfer atau struk bukti pembayaran meliputi Email,Nomor Faktur, Domain, nama pemilik Rekening, serta banyaknya jumlah dan yang kita transfer, berikut tampilannya </p>
+				<img src="images/konfirmasipembayaran.jpg" width="400x400" title="konfirmasi pembayaran"> </br></br> <p> berhasil <img src="images/konfirmasipembayaranBerhasil.jpg" width="400x400" title="berhasil"> </br></br></p>
+				<li><p>selanjutnya masuk Login di URL 
+				<a href="https://member.idwebhost.com/clientarea.php"  role="button">Login</a></p></li>
+				<p>7. Masuk menu Domain  di alat pengelolaan selanjunya mengubah nameservers terdahulu di area clien di manage nameservers, berikut tampilannya</p>
+				<img src="images/mengubahNameserver.jpg" width="400x400" title="ubah nameservers"> </br></br>
+				<p>8. Masuk menu Domain  di alat pengelolaan selanjunya kelola domain, berikut tampilannya</p>
+				<img src="images/cname.jpg" width="400x400" title="keloladomain"> </br></br>
+				<p>9. Sukses Domain yang kita buat dengan nama sendiri, berikut tampilannya</p>
+				<img src="images/sukses.jpg" width="400x400" title="berhasil"> </br></br>				
+				<li><p>selesai </p></li>
+			
+					
+					
+				<!--============================== footer =================================-->
+	<footer>
+		<div class="row clearfix">
+		<div class="col-md-8 column">
+			<ul class="breadcrumb">
+				<li>
+					<a href="index.html"><span class="glyphicon glyphicon-home"> Home</a> <span class="divider"></span>
+				</li>
+				</div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Laporan| Aman 4511215033 | 2016</p>
+          </div>
+        </div>      
+	</footer>
