@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Jekyll on OpenShift
 
 #### Running on OpenShift
@@ -27,3 +28,6 @@ The official community support is available here: http://jekyllrb.com/help/
 ### Bug Reports
 
 Please report bugs or log feature requests using Github Issues, pull requests are welcome.
+=======
+# latihanhosting
+>>>>>>> 76ea9ad53f663a9f4fff68061af82dea604799af
