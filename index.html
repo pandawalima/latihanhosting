@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Latihanhosting by pandawalima</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/pandawalima/latihanhosting">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/pandawalima/latihanhosting/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/pandawalima/latihanhosting/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Latihanhosting</h1>
+          <p>Laporan UTS Pemograman 4 RK-FTUP</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/pandawalima">pandawalima</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="ada-beberapa-langkah-sebelum-membuat-aplikasi-dijava-meliputi" class="anchor" href="#ada-beberapa-langkah-sebelum-membuat-aplikasi-dijava-meliputi" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ada beberapa langkah sebelum membuat aplikasi dijava meliputi</h1>
+
+<ul>
+<li>Install Java SDK 
+<a href="https://java.com/en/download/">bisa Download disini</a>
+</li>
+<li>Setting Environment Variable</li>
+<li>Instal Git 
+<a href="https://git-scm.com/downloads">bisa Download disini</a>
+</li>
+<li>Install TortoisGit 
+<a href="http://www.putty.org/">bisa Download disini</a>
+</li>
+</ul>
+
+<h3>
+<a id="sesuai-dengan-ketentuan-materi-kuliah-pemograman-4-ada-beberapa-tahap-sebelumnya-membuat-registrasi-domain-akun-diopenshift-terus-deploy-di-cloud--pembelian-domain-sampai-bisa-diakses-dengan-nama-domain-sendiri--membuat-ssh-key-clone-file-atau-mendeploy-kembali-dengan-mengcommit-dari-aplikasi-tortoisgit-yang-sudah-terinstall-di-laptopmari-kita-membahas-artikel-saya-ini-dengan-langkah-langkah-sebagai-berikut-" class="anchor" href="#sesuai-dengan-ketentuan-materi-kuliah-pemograman-4-ada-beberapa-tahap-sebelumnya-membuat-registrasi-domain-akun-diopenshift-terus-deploy-di-cloud--pembelian-domain-sampai-bisa-diakses-dengan-nama-domain-sendiri--membuat-ssh-key-clone-file-atau-mendeploy-kembali-dengan-mengcommit-dari-aplikasi-tortoisgit-yang-sudah-terinstall-di-laptopmari-kita-membahas-artikel-saya-ini-dengan-langkah-langkah-sebagai-berikut-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sesuai dengan ketentuan materi kuliah pemograman 4 ada beberapa tahap sebelumnya membuat registrasi domain akun diopenshift terus deploy di cloud , pembelian domain sampai bisa diakses dengan nama domain sendiri , membuat ssh-key, clone file atau mendeploy kembali dengan mengcommit dari aplikasi TortoisGit yang sudah terinstall di laptop,mari kita membahas artikel saya ini dengan langkah-langkah sebagai berikut :</h3>
+
+<h3>
+<a id="membuat-webserver-di-openshift" class="anchor" href="#membuat-webserver-di-openshift" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Membuat webserver di openshift</h3>
+
+<ul>
+<li>Buat akun di openshift dan isikan username serta password kita <a href="https://www.openshift.com/app/account/new">Daftar disini</a><br>
+</li>
+<li>Verifikasi email yang dikirim dari openshift selanjutnya <a href="https://openshift.redhat.com/app/login">Login Openshift</a><br>
+</li>
+<li>Create Application<br>
+</li>
+<li>Pilih aplikasi yang akan dibuat, contohnya Jekyll<br>
+</li>
+<li>Isi public URL dengan yang kita inginkan,kemudian klik create application</li>
+<li>Aplikasi sudah kita buat dan kita bisa cek dengan mengakses public url yang kita isi tadi </li>
+<li>Generate public key dengan menjalankan Putty<br>
+</li>
+<li>isi key passphrase dengan yang mudah diingat, misal "pemograman4"</li>
+<li>klik save private key dan public key simpan di folder yang mudah diakses kembali<br>
+</li>
+<li>sebelum membuat set ssh kita Copy text yang ada di textbox public key ke ssh public key di akun openshift kita<br>
+</li>
+<li>memberi nama pada key nya misalnya ssh-key dan paste text yang tadi dicopy pada textbox di bawahnya<br>
+</li>
+<li>klik create untuk membuat ssh key dan sukses berikut tampilannya<br>
+</li>
+<li>Clone source dari openshift kita perlu mengetahui akses URL ssh dan mencopy alamat ULR tersebut, berikut tampilannya<br>
+</li>
+<li>Pada tampilan git clone masukkan URL dari source kode ssh openshift tadi selanjutnya ceklis Load putty key cari file private key yang tadi kita simpan.<br>
+</li>
+<li>masukkan passphrase yang tadi kita isi yaitu "Pemograman4"<br>
+</li>
+<li>selanjutnya di klik OK , maka akan melakukan proses cloning latihanhosting yang saya buat dari platform openshift </li>
+</ul>
+
+<h2>
+<a id="membuat-artikel" class="anchor" href="#membuat-artikel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Membuat artikel</h2>
+
+<p>Setelah folder latihanhosting muncul untuk web berbasis html lalu kita edit menggunakan notepad++  <a href="https://notepad-plus-plus.org/download/">Download Notepade ++</a>serta mengcopy folder images yang isinya hasil printscren langkah-langkah pembuatan web di openshift          </p>
+
+<ul>
+<li>Setelah itu kita deploy kembali file tersebut ke openshift<br>
+</li>
+<li>Selanjutnya kita klik commit<br>
+</li>
+<li>Setelah sukses di commit lalu kita push ke openshift</li>
+<li>Push ke master<br>
+</li>
+<li>Push sukses, lakukan cara seperti di atas pada file-file lainnya yang akan di upload ke openshift<br>
+</li>
+<li>Setelah push sukses, kita coba akses kembali aplikasi yang kita buat tadi</li>
+<li>masuk ke akun openshift kita atau klik di aplikasi<br>
+</li>
+<li>Membuat Artikel berhasil di buat </li>
+</ul>
+
+<h2>
+<a id="tahapan-beli-domain" class="anchor" href="#tahapan-beli-domain" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tahapan Beli Domain</h2>
+
+<ul>
+<li>order pembelian domain di dan cek ketersediaan domain yang kita inginkan <a href="https://member.idwebhost.com/register.php">Daftar Domain</a>
+</li>
+<li>Registrasi dan mendaaftarkan dan ada beberapa biodata kita untuk memvalidasi supaya bisa login </li>
+<li>ketik nama domain kita misalkan amanpandawa untuk periksa kesediaan domain apakah bisa di order</li>
+<li>Mengetahui Ringkasan Pemesanan yang akan kita order dan melakukan pembayaran  atau Tranfer Lewat ATM</li>
+<li>Menyelesaikan pemesanan dengan menceklis dan menyetujui order yang kita pesan, berikut tampilannya</li>
+<li>Menerima faktur online untuk melakukan transfer pembayaran lewat ATM atau Internet Banking, berikut tampilan faktur yang telah di proses</li>
+<li>setelah melakukan pembayaran lalu kita melakukan konfirmasi dengan mengirim bukti transfer atau struk bukti pembayaran meliputi Email,Nomor Faktur, Domain, nama pemilik Rekening,    serta banyaknya jumlah dana yang kita transfer </li>
+<li>selanjutnya masuk Login di URL "<a href="https://member.idwebhost.com/clientarea.php">https://member.idwebhost.com/clientarea.php</a>" </li>
+<li>Masuk menu Domain  di alat pengelolaan selanjunya mengubah nameservers terdahulu di area clien di manage nameservers</li>
+<li>Masuk menu Domain  di alat pengelolaan selanjunya kelola domain</li>
+<li>Sukses Domain yang kita buat dengan nama sendiri <a href="http://www.amanpandawa.com/">amanpandawa.com</a>
+</li>
+<li>Selesai</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
